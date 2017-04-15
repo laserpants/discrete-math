@@ -132,7 +132,7 @@ $$
 m = 0.(d_{11}+1)(d_{22}+1)(d_{33}+1)(d_{44}+1)(d_{55}+1)(d_{66}+1) ... (d_{nn}+1) ...
 $$
 
-\noindent We think of addition here as being modulo 10, so $ 9 + 1 = 0 $. If our list, in fact, contains all real numbers, certainly this number would appear in some position, say $ p $. But what is this number $ p $? It cannot be 1, since $ m $ differs from this number in the first decimal after the radix point ($ d_{11} \ne d_{11} + 1 $). It cannot be the second number either, since $ d_{22} \ne d_{22} + 1 $. Actually, it can't be any number in the list. Each row $ n $ fails to match $ m $ in the $ n^{th} $ decimal of its fractional part. This tells us that a list like this cannot be constructed. The real numbers are simply too many. \\
+\noindent We think of addition here as being modulo 10, so $ 9 + 1 = 0 $. If our list, in fact, contains all real numbers, certainly $ m $ would appear in some position, say $ p $. But what is this number $ p $? It cannot be 1, since $ m $ differs from this number in the first decimal after the radix point ($ d_{11} \ne d_{11} + 1 $). It cannot be the second number either, since $ d_{22} \ne d_{22} + 1 $. Actually, it can't be any number in the list. Each row $ n $ fails to match $ m $ in the $ n^{th} $ decimal of its fractional part. This tells us that a list like this cannot be constructed. The real numbers are simply too many. \\
 
 \noindent The above proof is known as \begin{em}Cantor's diagonalization argument\end{em}. In computer science, a similar technique can be used to show that the \begin{em}Halting problem\end{em} is unsolvable. That is, to show that there is no effective procedure which will determine, for an arbitrary program, whether that program will terminate (halt) or continue to run forever. \\
 
@@ -209,12 +209,18 @@ $$
 \item either $ A $ or $ B $ is the empty set $ \varnothing $. 
 \end{packed_items}
 
+\noindent The cartesian product generalizes to more than two sets, so that 
+$$ 
+  S_1 \times S_2 \times \cdots \times S_n = \{ \langle s_1, s_2, \dots, s_n \rangle \; | \; s_i \in S_i, 1 \le i \le n \}.
+$$
+
 \subsection*{Russell's paradox}
 
 George Cantor's early set theory ran into trouble in 1901, when Bertrand Russel showed it to be inconsistent. In what we now refer to as \begin{em}naive\end{em} set theory, pretty much anything that can be written as a set comprehension is considered a set. Now, let, $ R = \{ x \ | \ x \notin x \} $. That is, $ R $ is defined to be the set of all sets who are not members of themselves. From this, it follows that $ R $ is a member of itself precisely when $R \notin R$. A contradiction! 
 As a result, axiomatic set theories were developed, such as the Zermelo-Fraenkel set theory. Today, ZFC (where the C refers to the \begin{em}Axiom of Choice\end{em}) serves as a standard foundation of mathematics.
 In practical use, we have to be careful when talking about sets of other sets. In particular, there is no ``set of all sets." In axiomatic set theory, this would instead be referred to as a \begin{em}proper class\end{em}. \\
   
+\pagebreak
 \noindent A popular version of Russel's paradox, which doesn't involve set-theoretic terminology, is the \begin{em}Barber paradox\end{em} (although it isn't really a paradox):
 \begin{displayquote}\begin{em}
 There is a town and in this town there is a barber. The barber shaves all those men in this town who do not shave themselves, and only those men. Then, who shaves the barber?
