@@ -46,11 +46,11 @@
 
 \subsection*{Sets}
 
-A set is an unordered collection of distinct objects. \begin{em}Unordered\end{em} is to say that order is irrelevant -- two sets are considered to be equal when they contain the same elements. E.g., $ \{ 1, 2, 3 \} $ is the same set as $ \{ 3, 2, 1 \} $. \begin{em}Distinct\end{em} means that a set cannot contain duplicates. For this reason, $ \{ 1, 1, 2, 3 \} $ is either not a set at all, or otherwise denotes the set $ \{ 1, 2, 3 \} $, depending on how you feel about it. (A set-like collection which is allowed to contain duplicates is called a \begin{em}multiset\end{em}, or \begin{em}bag\end{em}.) 
+A set is an unordered collection of distinct objects. \begin{em}Unordered\end{em} is to say that order is irrelevant---two sets are considered to be equal when they contain the same elements. E.g., $ \{ 1, 2, 3 \} $ is the same set as $ \{ 3, 2, 1 \} $. \begin{em}Distinct\end{em} means that a set cannot contain duplicates. For this reason, $ \{ 1, 1, 2, 3 \} $ is either not a set at all, or otherwise denotes the set $ \{ 1, 2, 3 \} $, depending on how you feel about it. (A set-like collection which is allowed to contain duplicates is called a \begin{em}multiset\end{em}, or \begin{em}bag\end{em}.) 
 
 \subsubsection*{Terminology and notation}
 
-We refer to the objects in a set as its \begin{em}elements\end{em} (or sometimes \begin{em}members\end{em}). If $ a $ is an element of $ S $, we use the notation $ a \in S $. Conversely, $ b \notin S $ means that $ b $ is not in $ S $. Using, so called, \begin{em}set-builder\end{em} style, we write $ \{ s \in A \ | \ P(s) \} $ for the set of all elements $ s \in A $ such that $ P(s) $ holds, where $ P $ is some \begin{em}predicate\end{em} on the set $ A $, i.e., a boolean function $ A \rightarrow \{ true, false \} $. For example, $ \{ p \in \mathbb{N} \ | \ p \text{ is prime} \} $ is the set of all prime numbers. Set builder notation is similar to the list comprehension syntax available in some programming languages. Here is an example in Haskell code, where the predicate is \verb|odd| -- a function we can think of here as having type \verb|Int -> Bool|.
+We refer to the objects in a set as its \begin{em}elements\end{em} (or sometimes \begin{em}members\end{em}). If $ a $ is an element of $ S $, we use the notation $ a \in S $. Conversely, $ b \notin S $ means that $ b $ is not in $ S $. Using, so called, \begin{em}set-builder\end{em} style, we write $ \{ s \in A \ | \ P(s) \} $ for the set of all elements $ s \in A $ such that $ P(s) $ holds, where $ P $ is some \begin{em}predicate\end{em} on the set $ A $, i.e., a boolean function $ A \rightarrow \{ true, false \} $. For example, $ \{ p \in \mathbb{N} \ | \ p \text{ is prime} \} $ is the set of all prime numbers. Set builder notation is similar to the list comprehension syntax available in some programming languages. Here is an example in Haskell code, where the predicate is \verb|odd|---a function we can think of here as having type \verb|Int -> Bool|.
 
 \begin{verbatim}
 [ x | x <- [1..100], odd x ]   -- Odd integers in the range 1 .. 100
@@ -113,7 +113,7 @@ A set is countably infinite if its elements can be put in one-to-one corresponde
 \end{tabular} 
 \end{center}
 
-\noindent Now, ordered by the naturals, we will instead denote the number for each row $ n$ as $ 0.d_{n1}d_{n2}d_{n3}... $ We then get a list: 
+\noindent Ordered by the naturals, we will instead denote these numbers as $ 0.d_{n1}d_{n2}d_{n3}... $, with $ n $ being the row number. We then get a list: 
 \begin{center}
 \begin{tabular}{c l}
     List position & Real number \\
@@ -132,7 +132,7 @@ $$
 m = 0.(d_{11}+1)(d_{22}+1)(d_{33}+1)(d_{44}+1)(d_{55}+1)(d_{66}+1) ... (d_{nn}+1) ...
 $$
 
-\noindent We think of addition here as being modulo 10, so $ 9 + 1 = 0 $. If our list, in fact, contains all real numbers, certainly this number would appear in some position in this list, say $ p $. But what is this number $ p $? It cannot be 1, since $ m $ differs from this number in the first decimal after the radix point ($ d_{11} \ne d_{11} + 1 $). It cannot be the second number either, since $ d_{22} \ne d_{22} + 1 $. Actually, it can't be any number in the list. Each row $ n $ fails to match $ m $ in the $ n^{th} $ decimal of its fractional part. This tells us that a list like this cannot be constructed. The real numbers are simply too many. \\
+\noindent We think of addition here as being modulo 10, so $ 9 + 1 = 0 $. If our list, in fact, contains all real numbers, certainly this number would appear in some position, say $ p $. But what is this number $ p $? It cannot be 1, since $ m $ differs from this number in the first decimal after the radix point ($ d_{11} \ne d_{11} + 1 $). It cannot be the second number either, since $ d_{22} \ne d_{22} + 1 $. Actually, it can't be any number in the list. Each row $ n $ fails to match $ m $ in the $ n^{th} $ decimal of its fractional part. This tells us that a list like this cannot be constructed. The real numbers are simply too many. \\
 
 \noindent The above proof is known as \begin{em}Cantor's diagonalization argument\end{em}. In computer science, a similar technique can be used to show that the \begin{em}Halting problem\end{em} is unsolvable. That is, to show that there is no effective procedure which will determine, for an arbitrary program, whether that program will terminate (halt) or continue to run forever. \\
 
@@ -170,7 +170,7 @@ $$
   \input{intersection.pdf_tex}
 \end{center}
 
-\noindent The \begin{em}intersection\end{em} $ \cap $ of two sets $ A $ and $ B $, is the set of all elements, which appear both in $ A $ and $ B $. 
+\noindent The \begin{em}intersection\end{em} $ \cap $ of two sets $ A $ and $ B $ is the set of all elements which appear in both $ A $ and $ B $. 
 $$
 A \cap B = \{ s \ | \ s \in A \text{ and } s \in B \} 
 $$
@@ -203,7 +203,7 @@ $$
 A \times B = \{ \langle a, b \rangle \ | \ a \in A, b \in B \}.
 $$
 
-\noindent For any set $ A $ : $ A \times \varnothing = \varnothing = \varnothing \times A $. Just like the set-theoretic difference, the cartesian product is not commutative. $ A \times B $ is not equal to $ B \times A $, unless 
+\noindent For any set $ A $ : $ A \times \varnothing = \varnothing = \varnothing \times A $. Just like the set-theoretic difference, the cartesian product is not commutative. Specifically, $ A \times B $ is not equal to $ B \times A $, unless 
 \begin{packed_items}
 \item $ A = B $, or 
 \item either $ A $ or $ B $ is the empty set $ \varnothing $. 
