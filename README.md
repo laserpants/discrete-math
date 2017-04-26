@@ -8,13 +8,15 @@
 6. Boolean Algebra
 7. Proof Reasoning
 8. Number Theory
-9. Combinatorics and Counting (Rule of Sum/Product, Pigeonhole principle, The Binomial Coefficient, Stirling numbers, etc.)
-10. Formal Languages and Automata
-11. Trees (and Data Structures?)
-12. Information Theory
-13. Linear Algebra and Matrices
-14. Abstract Algebra
+9. Recurrence Relations
+10. Combinatorics and Counting (Rule of Sum/Product, Pigeonhole principle, The Binomial Coefficient, Stirling numbers, etc.)
+11. Generating Functions
+12. Formal Languages and Automata
+13. Trees (and Data Structures?)
+14. Information Theory
+15. Linear Algebra and Matrices
+16. Abstract Algebra
 
 ## Beyond
 
-15. Big-O Notation and Asymptotic Time Complexity Analysis
+17. Big-O Notation and Asymptotic Time Complexity Analysis
