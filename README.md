@@ -15,8 +15,8 @@
 13. Trees (and Data Structures?)
 14. Information Theory
 15. Linear Algebra and Matrices
-16. Abstract Algebra
 
 ## Beyond
 
+16. Abstract Algebra
 17. Big-O Notation and Asymptotic Time Complexity Analysis
