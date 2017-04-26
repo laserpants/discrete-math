@@ -4,17 +4,17 @@
 2. 
 3. Logic
 4. Relations and Functions
-?. Discrete Probability
-?. Boolean Algebra
-?. Proof Reasoning
-?. Number Theory
-?. Combinatorics and Counting Principles
-?. Formal Languages and Automata
-?. Trees (and Data Structures?)
-?. Information Theory
-?. Linear Algebra and Matrices
-?. Abstract Algebra
+5. Discrete Probability
+6. Boolean Algebra
+7. Proof Reasoning
+8. Number Theory
+9. Combinatorics and Counting Principles (Pigeonhole principle, The Binomial Coefficient, Stirling numbers, etc.)
+10. Formal Languages and Automata
+11. Trees (and Data Structures?)
+12. Information Theory
+13. Linear Algebra and Matrices
+14. Abstract Algebra
 
 ## Beyond
 
-?. Big-O Notation and Asymptotic Time Complexity Analysis
+15. Big-O Notation and Asymptotic Time Complexity Analysis
