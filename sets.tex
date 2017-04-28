@@ -50,7 +50,7 @@ A set is an unordered collection of distinct objects. \begin{em}Unordered\end{em
 
 \subsubsection*{Terminology and notation}
 
-We refer to the objects in a set as its \begin{em}elements\end{em} (or sometimes \begin{em}members\end{em}). If $ a $ is an element of $ S $, we use the notation $ a \in S $. Conversely, $ b \notin S $ means that $ b $ is not in $ S $. Using, so called, \begin{em}set-builder\end{em} style, we write $ \{ s \in A \ | \ P(s) \} $ for the set of all elements $ s \in A $ such that $ P(s) $ holds, where $ P $ is some \begin{em}predicate\end{em} on the set $ A $, i.e., a boolean function $ A \rightarrow \{ true, false \} $. For example, $ \{ p \in \mathbb{N} \ | \ p \text{ is prime} \} $ is the set of all prime numbers. Set builder notation is similar to the list comprehension syntax available in some programming languages. This is an example in Haskell code, where the predicate is \verb|odd|---a function we can think of here as having type \verb|Int -> Bool|.
+We refer to the objects in a set as its \begin{em}elements\end{em} (or sometimes \begin{em}members\end{em}). If $ a $ is an element of $ S $, we use the notation $ a \in S $. Conversely, $ b \notin S $ means that $ b $ is not in $ S $. Using, so called, \begin{em}set-builder\end{em} notation, we write $ \{ s \in A \ | \ P(s) \} $ for the set of all elements $ s \in A $ such that $ P(s) $ holds, where $ P $ is some \begin{em}predicate\end{em} on the set $ A $, i.e., a boolean function $ A \rightarrow \{ true, false \} $. For example, $ \{ p \in \mathbb{N} \ | \ p \text{ is prime} \} $ is the set of all prime numbers. Set builder style is similar to the list comprehension syntax available in some programming languages. This is an example in Haskell code, where the predicate is \verb|odd|---a function we can think of here as having type \verb|Int -> Bool|.
 
 \begin{verbatim}
 [ x | x <- [1..100], odd x ]   -- Odd integers in the range 1 .. 100
@@ -67,7 +67,7 @@ To give a rigorous construction for $ \mathbb{R} $ requires some more work. One 
 \noindent Both $ \mathbb{R} $ and $ \mathbb{Q} $ form, what is known as, \begin{em}totally ordered fields\end{em}, but what makes the real numbers stand apart is that they satisfy an important property, known as \begin{em}Dedekind completeness\end{em}.
 This property guarantees that any non-empty set of real numbers, for which there exists an \begin{em}upper bound\end{em}, also has a \begin{em}least upper bound\end{em} in $ \mathbb{R} $.
 To see why this doesn't work for the set $ \mathbb{Q} $, consider the set $ \{ x \in \mathbb{Q} \ | \ x^2 \le 2 \} $. The least upper bound of this set is $ \sqrt{2} $, which is not a rational number.
-Finally, we say that the set $ \mathbb{Q} $ is \begin{em}dense\end{em} in the reals, which means that for any number $ r \in \mathbb{R} $, either $ r $ is in $ \mathbb{Q} $, or for every $ \epsilon > 0$, there exists a number $ q \in \mathbb{Q} $, such that $ | q - r | < \epsilon $. That is, if $ r $ is not itself a rational number, then it is ``arbitrarily close" to one.
+Incidentally, we say that the set $ \mathbb{Q} $ is \begin{em}dense\end{em} in the reals, which means that for any number $ r \in \mathbb{R} $, either $ r $ is in $ \mathbb{Q} $, or for every $ \epsilon > 0$, there exists a number $ q \in \mathbb{Q} $, such that $ | q - r | < \epsilon $. That is, if $ r $ is not itself a rational number, then it is ``arbitrarily close" to one.
 
 \subsection*{Sizes of sets}
 
