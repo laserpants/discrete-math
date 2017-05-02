@@ -3,7 +3,7 @@
 1. [Sets and Ordered Collections](https://github.com/laserpants/discrete-math/blob/master/sets.pdf)
 2. Number Theory
 3. Logic & Boolean Algebra 
-4. Relations and Functions
+4. [Relations and Functions](https://github.com/laserpants/discrete-math/blob/master/relations.pdf)
 5. Discrete Probability 
 6. Proof Reasoning
 7. Recurrence Relations
