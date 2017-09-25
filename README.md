@@ -4,7 +4,7 @@
 2. Number Theory
 3. Logic & Boolean Algebra 
 4. [Relations and Functions](https://github.com/laserpants/discrete-math/blob/master/relations.pdf)
-5. Discrete Probability 
+5. [Discrete Probability](https://github.com/laserpants/discrete-math/blob/master/probability.pdf) 
 6. Proof Reasoning
 7. Recurrence Relations
 8. Combinatorics and Counting (Rule of Sum/Product, Pigeonhole principle, The Binomial Coefficient, Stirling numbers, etc.)
