@@ -5,9 +5,9 @@
 \usepackage{graphicx}
 \usepackage{color}
 \usepackage{pgfplots}
-\usepackage{csquotes}
+% \usepackage{csquotes}
 \usepackage{fancyvrb}
-\usepackage{wrapfig}
+% \usepackage{wrapfig}
 \usepackage{centernot}
 \usepackage{pifont}
 \usepackage{hyperref}
@@ -23,8 +23,8 @@
 \newtheorem{lemma}{Lemma}
 \newtheorem{proposition}{Proposition}
 \newtheorem*{surfacecor}{Corollary 1}
-\newtheorem{conjecture}{Conjecture} 
-\newtheorem{question}{Question} 
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{question}{Question}
 \theoremstyle{definition}
 \newtheorem{definition}{Definition}
 
@@ -48,13 +48,42 @@
 
 \subsection*{Divisibility}
 
+An integer $a$ is \begin{em}divisible\end{em} by the integer $b$, written $b \mid a$, if there exists an integer $c$, such that $ a = bc. $
+
+\subsubsection*{Transitivity of divisibility relation}
+
 \subsection*{Euclidean Division}
+
+\subsection*{Common Divisors and the GCD function}
 
 \subsection*{Basis Representation Theorem}
 
 \subsection*{Congruence and Modular Arithmetic}
 
 \subsection*{Euler's Totient Function}
+
+Euler's totient function, usually written as $\varphi(n)$, counts the number of positive integers up to $n$ that are coprime (relatively prime) to $n$.
+
+$$ \varphi(n) = |\{k \in \mathbb{N} : \gcd(k, n) = 1\}| $$
+
+\begin{center}
+  \begin{tabular}{l l l}
+    $n$ & $\{k : \gcd(k, n1) = 1\}$ & $\varphi(n)$ \\
+    \hline
+    1  & \{1\}                    & 1 \\
+    2  & \{1\}                    & 1 \\
+    3  & \{1,2\}                  & 2 \\
+    4  & \{1,3\}                  & 2 \\
+    5  & \{1,2,3,4\}              & 4 \\
+    6  & \{1,5\}                  & 2 \\
+    7  & \{1,2,3,4,5,6\}          & 6 \\
+    8  & \{1,3,5,7\}              & 4 \\
+    9  & \{1,2,4,5,7,8\}          & 6 \\
+    10 & \{1,3,7,9\}              & 4 \\
+    11 & \{1,2,3,4,5,6,7,8,9,10\} & 10 \\
+    12 & \{1,5,7,11\}             & 4 \\
+  \end{tabular}
+\end{center}
 
 \subsection*{Fermat's Little Theorem}
 
