@@ -48,20 +48,35 @@
 
 \subsection*{Divisibility}
 
-An integer $a$ is \begin{em}divisible\end{em} by the integer $b$, written $b \mid a$, if there exists an integer $c$, such that $ a = bc. $ Divisibility is a binary relation (See Chapter 4).
+An integer $a$ is \begin{em}divisible\end{em} by the integer $b$, written $b \mid a$, if there exists some integer $c$, such that $ a = bc. $ Another way to say this is that $b$ \begin{em}divides\end{em} $a$. Divisibility is a binary relation. (See Chapter 4)
 
 \subsubsection*{Basic properties}
 
+Every number divides itself, since $a = a \cdot 1$ for all $a$. This also means that $1 \mid a$ for all a. Every number is also a divisor of zero, since $0 = a \cdot 0$.
+
 \subsubsection*{Transitivity of divisibility relation}
 
-If $a$ divides $b$, and $b$ divides $c$ then there are integers $d, e$ such that $b = ad$ and $c = be$. Then, $ c = be = (ad)e = a(de) $ which means that $a$ divides $c$. In other words,
-$$ a \mid b \text{ and } b \mid c \implies a \mid c.  $$
+If $a$ divides $b,$ and $b$ divides $c,$ then there are integers $d$ and $e$, such that $b = ad$ and $c = be$. We then have $c = be = (ad)e = a(de),$ which means that $a$ divides $c.$ In other words;
+$$ a \mid b \text{ and } b \mid c \implies a \mid c. $$
 
 This is the transitivity property of binary relations, described in Chapter 4.
 
-\subsection*{Euclidean Division}
-
 \subsection*{Common Divisors and the GCD function}
+
+If a number $a$ divides both $b$ and $c$, then $a$ is a \begin{em}common divisor\end{em} of $b$ and $c$. 
+  
+A number $d$ is the \begin{em}greatest common divisor\end{em}, or $\gcd,$ of $b$ and $c$, if
+  
+\begin{packed_items}
+  \item $d$ is a common divisor of $b$ and $c$, and
+  \item if $e$ is a common divisor of $b$ and $c$, then $e$ divides $d.$
+\end{packed_items}
+
+For example, the divisors of $42$ are $\{ 1,2,3,6,7,14,21,42 \}$ and the divisors of $24$ are $\{ 1,2,3,4,6,8,12,24 \}$. The common divisors of $42$ and $24$ are the elements in the intersection of these two sets, viz., $\{ 1,2,3,6 \}$. Every element of this set is a divisor of $6$. So the $\gcd$ of $42$ and $24$ is $6.$
+
+\subsection*{Common Multiples and the LCM function}
+
+\subsection*{Euclidean Division}
 
 \subsection*{Basis Representation Theorem}
 
@@ -98,7 +113,7 @@ $$
 a^p \equiv a (\mod p)
 $$
 
-for every prime number $p$, and integer $a$.
+for every prime number $p$ and integer $a$.
 
 \subsection*{Chinese Remainder Theorem}
 
