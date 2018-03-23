@@ -48,7 +48,7 @@
 
 \subsection*{Divisibility}
 
-An integer $a$ is \begin{em}divisible\end{em} by the integer $b$, written $b \mid a$, if there exists some integer $c$, such that $ a = bc. $ Another way to say this is that $b$ \begin{em}divides\end{em} $a$. Divisibility is a binary relation. (See Chapter 4)
+An integer $a$ is \begin{em}divisible\end{em} by the integer $b$, written $b \mid a$, if there exists some integer $c$, such that $ a = bc. $ Other ways to say this is that $b$ \begin{em}divides\end{em} $a$, or that $b$ is a \begin{em}divisor\end{em} of $a$. Divisibility is a binary relation (see Chapter 4) defined over $\mathbb{Z}$.
 
 \subsubsection*{Basic properties}
 
@@ -65,14 +65,18 @@ This is the transitivity property of binary relations, described in Chapter 4.
 
 If a number $a$ divides both $b$ and $c$, then $a$ is a \begin{em}common divisor\end{em} of $b$ and $c$. 
   
-A number $d$ is the \begin{em}greatest common divisor\end{em}, or $\gcd,$ of $b$ and $c$, if
+A number $d$ is the \begin{em}greatest common divisor\end{em}, or $\gcd,$ of $b$ and $c$, precisely when
   
 \begin{packed_items}
   \item $d$ is a common divisor of $b$ and $c$, and
   \item if $e$ is a common divisor of $b$ and $c$, then $e$ divides $d.$
 \end{packed_items}
 
+That is, the $\gcd$ is a common divisor of $b$ and $c$ which is also divisible by any common divisor of those two numbers.
+
 For example, the divisors of $42$ are $\{ 1,2,3,6,7,14,21,42 \}$ and the divisors of $24$ are $\{ 1,2,3,4,6,8,12,24 \}$. The common divisors of $42$ and $24$ are the elements in the intersection of these two sets, viz., $\{ 1,2,3,6 \}$. Every element of this set is a divisor of $6$. So the $\gcd$ of $42$ and $24$ is $6.$
+
+\subsubsection*{Coprimality}
 
 \subsection*{Common Multiples and the LCM function}
 
