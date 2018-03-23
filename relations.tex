@@ -5,9 +5,9 @@
 \usepackage{graphicx}
 \usepackage{color}
 \usepackage{pgfplots}
-\usepackage{csquotes}
+%\usepackage{csquotes}
 \usepackage{fancyvrb}
-\usepackage{wrapfig}
+%\usepackage{wrapfig}
 \usepackage{centernot}
 \usepackage{pifont}
 \usepackage{hyperref}
@@ -123,8 +123,8 @@ An \begin{em}antisymmetric\end{em} relation satisfies the condition that, for ev
   \forall a, b \in S : (a\mathcal{R}b \wedge b\mathcal{R}a) \implies a = b
 \end{displaymath}
 
-\noindent \begin{em}Examples:\end{em} $ \le, \ge $ and $ | $. Every asymmetric relation is antisymmetric, since the condition $ aRb \wedge bRa $ is false if $ \mathcal{R} $ is asymmetric, and an implication with a false premise is automatically true.
-Note, however, that a relation can be both symmetric and antisymmetric.
+\noindent \begin{em}Examples:\end{em} $ \le, \ge, $ and divisibility, when defined over the natural numbers. Divisibility on the integers, however, is not antisymmetric, since $a \mid -a$ and $-a \mid a$ but $a \ne -a.$ Every asymmetric relation is antisymmetric, since the condition $ aRb \wedge bRa $ is false if $ \mathcal{R} $ is asymmetric, and an implication with a false premise is automatically true.
+Note that a relation can be both symmetric and antisymmetric.
 
 \subsubsection*{\ding{52} Totality}
 A relation $ \mathcal{R} $ is \begin{em}total\end{em} when the following condition holds for any two elements $ a $ and $ b $ in $ S $: Either $ a $ is related to $ b $, or $ b $ is related to $ a $, under $ \mathcal{R} $. % The word \begin{em}complete\end{em} is sometimes used to describe this property.
