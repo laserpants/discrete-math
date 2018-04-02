@@ -23,8 +23,8 @@
 \newtheorem{lemma}{Lemma}
 \newtheorem{proposition}{Proposition}
 \newtheorem*{surfacecor}{Corollary 1}
-\newtheorem{conjecture}{Conjecture} 
-\newtheorem{question}{Question} 
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{question}{Question}
 \theoremstyle{definition}
 \newtheorem{definition}{Definition}
 
@@ -44,46 +44,46 @@
 
 \begin{document}
 
-\noindent \verb|hildenjohannes@gmail.com| \hfill \url{https://github.com/laserpants} 
+\noindent \verb|hildenjohannes@gmail.com| \hfill \url{https://github.com/laserpants}
 
 \section*{4. Relations and Functions}
 
 \subsection*{Binary relations}
 
-A $ n $-ary relation on sets $ A_1, A_2, \dots, A_n $ is a subset of the cartesian product $ A_1 \times A_2 \times \cdots \times A_n $, i.e., a set of $ n $-tuples $ \langle a_1, a_2, \dots, a_n \rangle $, where $ a_i \in A_i $ for all $ i \in [1 .. n]$. Binary relations are just relations with \begin{em}arity\end{em} two.  
+A $ n $-ary relation on sets $ A_1, A_2, \dots, A_n $ is a subset of the cartesian product $ A_1 \times A_2 \times \cdots \times A_n $, i.e., a set of $ n $-tuples $ \langle a_1, a_2, \dots, a_n \rangle $, where $ a_i \in A_i $ for all $ i \in [1 .. n]$. Binary relations are just relations with \begin{em}arity\end{em} two.
 
 \subsubsection*{Notation and terminology}
 
-\noindent Take $ \mathcal{R} \subseteq A \times B $ to be a binary relation between two sets $ A $ and $ B $, where $ A $ is called the \begin{em}domain\end{em}, and $ B $ the \begin{em}codomain\end{em} of $ \mathcal{R} $. If $ \langle a, b \rangle \in \mathcal{R} $, we say that $ a $ stands in relation $ \mathcal{R} $ with $ b $, or that $ a $ is related to $ b $ under $ \mathcal{R} $. It is, however, more common to use the infix notation $ a \mathcal{R} b $ to express this fact. In the case that $ A = B $, the relation is \begin{em}defined over\end{em}, or is a relation \begin{em}on\end{em} the set in question. 
+\noindent Take $ \mathcal{R} \subseteq A \times B $ to be a binary relation between two sets $ A $ and $ B $, where $ A $ is called the \begin{em}domain\end{em}, and $ B $ the \begin{em}codomain\end{em} of $ \mathcal{R} $. If $ \langle a, b \rangle \in \mathcal{R} $, we say that $ a $ stands in relation $ \mathcal{R} $ with $ b $, or that $ a $ is related to $ b $ under $ \mathcal{R} $. It is, however, more common to use the infix notation $ a \mathcal{R} b $ to express this fact. In the case that $ A = B $, the relation is \begin{em}defined over\end{em}, or is a relation \begin{em}on\end{em} the set in question.
 The notation $ a \!\!\not\!\!\mathcal{R} b $ is a shorthand for $ \neg (a \mathcal{R} b) $.
-Sometimes, the abbreviation $ a \mathcal{R} b \mathcal{R} c $ is used, meaning that $ a \mathcal{R} b \wedge b \mathcal{R} c $ (e.g., $ 0 < r < 1 $ when $ 0 < r $ and $ r < 1 $). 
+Sometimes, the abbreviation $ a \mathcal{R} b \mathcal{R} c $ is used, meaning that $ a \mathcal{R} b \wedge b \mathcal{R} c $ (e.g., $ 0 < r < 1 $ when $ 0 < r $ and $ r < 1 $).
 Some familiar binary relations are the
 
 \begin{packed_items}
 	\item order comparison $(<, >, \le, \ge)$;
-	\item equality $(=)$; 
-	\item subset $(\subseteq)$; and 
-	\item divisibility $(|)$ relations. 
+	\item equality $(=)$;
+	\item subset $(\subseteq)$; and
+	\item divisibility $(|)$ relations.
 \end{packed_items}
- 
+
 \subsection*{Properties of binary relations}
 
-Binary relations can be classified based on which properties they satisfy. 
-This gives rise to various families of relations, like orders, equivalence relations, dependency relations, and functions. Some of the more common of these properties are described next. 
+Binary relations can be classified according to the properties they satisfy.
+This gives rise to various families of relations, like orders, equivalence relations, dependency relations, and functions. Some of the more common of these properties are described next.
 In the following examples, we assume a relation $ \mathcal{R} $ defined over the set $ S $.
 
 \subsubsection*{\ding{52} Reflexivity}
 
-If $ \mathcal{R} $ is \begin{em}reflexive\end{em}, then every element of the set $ S $ is related to itself under $ \mathcal{R} $. 
+If $ \mathcal{R} $ is \begin{em}reflexive\end{em}, then every element of the set $ S $ is related to itself under $ \mathcal{R} $.
 \begin{displaymath}
-  \forall a \in S : a\mathcal{R}a 
+  \forall a \in S : a\mathcal{R}a
 \end{displaymath}
 
-\noindent \begin{em}Examples:\end{em} $ \le, \ge, \subseteq, \supseteq $, and $ = $. Divisibility is also reflexive, since every integer divides itself. 
+\noindent \begin{em}Examples:\end{em} $ \le, \ge, \subseteq, \supseteq $, and $ = $. Divisibility is also reflexive, since every integer divides itself.
 
 \subsubsection*{\ding{52} Irreflexivity}
 
-A relation $ \mathcal{R} $ is \begin{em}irreflexive\end{em} (or \begin{em}strict\end{em}) when no element of $ S $ is related to itself under $ \mathcal{R} $. % This property is also called \begin{em}strictness\end{em}. 
+A relation $ \mathcal{R} $ is \begin{em}irreflexive\end{em} (or \begin{em}strict\end{em}) when no element of $ S $ is related to itself under $ \mathcal{R} $. % This property is also called \begin{em}strictness\end{em}.
 \begin{displaymath}
   \forall a \in S : \neg(a\mathcal{R}a) \quad \quad (\text{or think of this as } \langle a, a \rangle \notin \mathcal{R} )
 \end{displaymath}
@@ -92,7 +92,7 @@ A relation $ \mathcal{R} $ is \begin{em}irreflexive\end{em} (or \begin{em}strict
 
 \subsubsection*{\ding{52} Transitivity}
 
-When a relation $ \mathcal{R} $ is \begin{em}transitive\end{em}, given three elements $ a, b, $ and $ c $ in $ S $, the following condition holds: If $ a $ is related to $ b $, and $ b $ is related to $ c $, then $ a $ is also related to $ c $. 
+When a relation $ \mathcal{R} $ is \begin{em}transitive\end{em}, given three elements $ a, b, $ and $ c $ in $ S $, the following condition holds: If $ a $ is related to $ b $, and $ b $ is related to $ c $, then $ a $ is also related to $ c $.
 \begin{displaymath}
   \forall a, b, c \in S : a\mathcal{R}b \wedge b\mathcal{R}c \implies a\mathcal{R}c  \quad \quad (\text{or more compactly } a\mathcal{R}b\mathcal{R}c \implies a\mathcal{R}c)
 \end{displaymath}
@@ -101,16 +101,16 @@ When a relation $ \mathcal{R} $ is \begin{em}transitive\end{em}, given three ele
 
 \subsubsection*{\ding{52} Symmetry}
 
-A relation $ \mathcal{R} $ is \begin{em}symmetric\end{em} when the following condition holds for any two elements $ a $ and $ b $ in $ S $: If $ a $ is related to $ b $, then $ b $ is also related to $ a $. 
+A relation $ \mathcal{R} $ is \begin{em}symmetric\end{em} when the following condition holds for any two elements $ a $ and $ b $ in $ S $: If $ a $ is related to $ b $, then $ b $ is also related to $ a $.
 \begin{displaymath}
-	\forall a, b \in S : a\mathcal{R}b \iff b\mathcal{R}a 
+	\forall a, b \in S : a\mathcal{R}b \iff b\mathcal{R}a
 \end{displaymath}
 
 \noindent \begin{em}Examples:\end{em} $ = $ and $ \equiv $.
 
 \subsubsection*{\ding{52} Asymmmetry}
 
-A relation $ \mathcal{R} $ is \begin{em}asymmetric\end{em} when the following condition holds for any two elements $ a $ and $ b $ in $ S $: If $ a $ is related to $ b $, then $ b $ is \begin{em}not\end{em} related to $ a $. 
+A relation $ \mathcal{R} $ is \begin{em}asymmetric\end{em} when the following condition holds for any two elements $ a $ and $ b $ in $ S $: If $ a $ is related to $ b $, then $ b $ is \begin{em}not\end{em} related to $ a $.
 \begin{displaymath}
   \forall a, b \in S : a\mathcal{R}b \implies \neg(b\mathcal{R}a)
 \end{displaymath}
@@ -118,7 +118,7 @@ A relation $ \mathcal{R} $ is \begin{em}asymmetric\end{em} when the following co
 \noindent \begin{em}Examples:\end{em} $ <, >, \subset, $ and $ \supset $. A relation which is not symmetric doesn't have to be asymmetric. As an example, $ \le $ is neither symmetric nor asymmetric. The only relation which is both symmetric and asymmetric is the \begin{em}empty relation\end{em} ($ \varnothing $).
 
 \subsubsection*{\ding{52} Antisymmetry}
-An \begin{em}antisymmetric\end{em} relation satisfies the condition that, for every pair of elements $ a $ and $ b $ of $ S $, if $ a $ is related to $ b $, and $ b $ is related to $ a $, then $ a = b $. 
+An \begin{em}antisymmetric\end{em} relation satisfies the condition that, for every pair of elements $ a $ and $ b $ of $ S $, if $ a $ is related to $ b $, and $ b $ is related to $ a $, then $ a = b $.
 \begin{displaymath}
   \forall a, b \in S : (a\mathcal{R}b \wedge b\mathcal{R}a) \implies a = b
 \end{displaymath}
@@ -132,15 +132,15 @@ A relation $ \mathcal{R} $ is \begin{em}total\end{em} when the following conditi
 	\forall a, b \in S : a\mathcal{R}b \vee b\mathcal{R}a
 \end{displaymath}
 
-\noindent \begin{em}Examples:\end{em} $ \le $ and $ \ge $. 
-A total relation is always reflexive. 
+\noindent \begin{em}Examples:\end{em} $ \le $ and $ \ge $.
+A total relation is always reflexive.
 
 \subsection*{Equivalence relations}
 
 An important class of binary relations is that of \begin{em}equivalence relations\end{em}---relations which link together two objects when they are ``equivalent" in some way.
-The classic example is the usual equality of numbers ($ = $). 
-Intuitively, we can think of equivalence relations as a generalization of equality. 
-More formally, a binary relation is an equivalence when it satisfies the transitive, symmetric, and reflexive properties. 
+The classic example is the usual equality of numbers ($ = $).
+Intuitively, we can think of equivalence relations as a generalization of equality.
+More formally, a binary relation is an equivalence when it satisfies the transitive, symmetric, and reflexive properties.
 In other words, if $ \sim $ is an equivalence relation on the set $ S $, then
 \begin{packed_items}
 \item $ \forall a, b, c \in S : a \sim b \sim c \implies a \sim c $;
@@ -148,7 +148,7 @@ In other words, if $ \sim $ is an equivalence relation on the set $ S $, then
 \item $ \forall a \in S : a \sim a $.
 \end{packed_items}
 
-\noindent The symbols $ \sim $ and $ \equiv $ are often used to denote this type of relation. 
+\noindent The symbols $ \sim $ and $ \equiv $ are often used to denote this type of relation.
 
 \subsubsection*{Equivalence classes}
 
@@ -168,9 +168,9 @@ Every equivalence relation corresponds to a \begin{em}partition\end{em} of the s
   \input{set_partition.pdf_tex}
 \end{wrapfigure}
 
-\noindent Equivalence relations and set partitions can be seen as different formalizations of the same thing.  
-The ``slices" of different colors in this illustration form a partition of the disc. 
-  
+\noindent Equivalence relations and set partitions can be seen as different formalizations of the same thing.
+The ``slices" of different colors in this illustration form a partition of the disc.
+
 \subsubsection*{Definition}
 
 \noindent If $ P = \{ S_1, S_2, \dots S_n \} $ is a partition of $ S $, then
@@ -181,8 +181,8 @@ The ``slices" of different colors in this illustration form a partition of the d
 \end{packed_items}
 
 \ \\ \\
-\noindent 
-The sets $ S_1, S_2, \dots, S_n $ are called the \begin{em}parts\end{em}, or \begin{em}blocks\end{em} of the partition. 
+\noindent
+The sets $ S_1, S_2, \dots, S_n $ are called the \begin{em}parts\end{em}, or \begin{em}blocks\end{em} of the partition.
 We also say that the sets in $ P $ \begin{em}covers\end{em} the set $ S $.
 A simple example of a partition (of the integers) is $ \{ \mathbb{E}, \mathbb{O} \} $, where $ \mathbb{E} = \{ 2x \mid x \in \mathbb{Z} \} $ and $ \mathbb{O} = \{ 2x + 1 \mid x \in \mathbb{Z} \} $ are the sets of even and odd integers respectively.
 Another example is a population, partitioned based on age, so that two people belong to the same block (subset) precisely when they have the same age.
@@ -227,7 +227,7 @@ A \begin{em}partial order\end{em} is a binary relation which is reflexive, antis
 \end{packed_items}
 
 \noindent A pair $ \langle S, \le \rangle $, where $ S $ is a set and $ \le $ a partial order on $ S $, is called a partially ordered set, or \begin{em}poset\end{em} for short.
-Partially ordered sets can be visualized using, so called, \begin{em}Hasse diagrams\end{em}. Below is an example of a diagram of the power set of $ \{ 1, 2, 3 \} $ ordered by the subset relation ($ \subseteq $). 
+Partially ordered sets can be visualized using, so called, \begin{em}Hasse diagrams\end{em}. Below is an example of a diagram of the power set of $ \{ 1, 2, 3 \} $ ordered by the subset relation ($ \subseteq $).
 
 \begin{center}
   \def\svgwidth{0.3\columnwidth}
@@ -264,13 +264,13 @@ To see why, assume that $ < $ is \begin{em}not\end{em} asymmetric. Then there is
 
 \subsubsection*{Total orders}
 
-Let $ \le $ be a (non-strict) partial order on $ S $. Now, if we pick two elements $ a, b \in S $, it may be the case that neither $ a \le b $ nor $ b \le a $. When this happens, we say that the elements $ a $ and $ b $ are \begin{em}incomparable\end{em} under the relation $ \le $. 
-A \begin{em}total order\end{em} is a partial order in which every two elements are comparable---i.e., one that satisfies the totality condition described earlier: 
-$$ 
+Let $ \le $ be a (non-strict) partial order on $ S $. Now, if we pick two elements $ a, b \in S $, it may be the case that neither $ a \le b $ nor $ b \le a $. When this happens, we say that the elements $ a $ and $ b $ are \begin{em}incomparable\end{em} under the relation $ \le $.
+A \begin{em}total order\end{em} is a partial order in which every two elements are comparable---i.e., one that satisfies the totality condition described earlier:
+$$
   \forall a, b \in S : a \le b \vee b \le a.
 $$
 
-\noindent Since reflexivity is implied by totality, it is sufficient to mention antisymmetry, transitivity, and totality in the definition of a total order. A totally ordered set $ \langle T, \le \rangle $, where $ \le $ is a total order on $ T $, is sometimes called a \begin{em}chain\end{em}. 
+\noindent Since reflexivity is implied by totality, it is sufficient to mention antisymmetry, transitivity, and totality in the definition of a total order. A totally ordered set $ \langle T, \le \rangle $, where $ \le $ is a total order on $ T $, is sometimes called a \begin{em}chain\end{em}.
 
 \subsubsection*{Joins and meets}
 
@@ -288,7 +288,7 @@ A totally ordered set is \begin{em}complete\end{em} when every non-empty subset 
 
 \subsubsection*{Lattices}
 
-A \begin{em}lattice\end{em} is a poset $ \langle P, \le \rangle $ in which every two elements have a join and a meet. 
+A \begin{em}lattice\end{em} is a poset $ \langle P, \le \rangle $ in which every two elements have a join and a meet.
 This Hasse diagram (from Wikipedia) shows the lattice of integer divisors of $ 60 $.
 
 \begin{center}
@@ -303,7 +303,7 @@ This Hasse diagram (from Wikipedia) shows the lattice of integer divisors of $ 6
   \input{non_lattice.pdf_tex}
 \end{center}
 
-\noindent In this diagram, the lower bounds for the pair of elements $ a $ and $ b $, are $ \{ d, g, h, i, 0 \} $. None of these stand in relation $ \le $ to all other elements of the set, and are therefore not the greatest lower bound. For instance, $ d \le g, h, 0 $ but $ d \not \le e $. 
+\noindent In this diagram, the lower bounds for the pair of elements $ a $ and $ b $, are $ \{ d, g, h, i, 0 \} $. None of these stand in relation $ \le $ to all other elements of the set, and are therefore not the greatest lower bound. For instance, $ d \le g, h, 0 $ but $ d \not \le e $.
 
 \subsubsection*{Dual order}
 
@@ -316,12 +316,12 @@ $$
 
 \subsection*{Functions}
 
-Functions are one of the most important notions in all of mathematics. Whereas functions of real and complex numbers are studied in depth in the branch of mathematical known as analysis, 
-the type of functions of primary interest in discrete math are those whose domain is either finite or a countable set. 
+Functions are one of the most important notions in all of mathematics. Whereas functions of real and complex numbers are studied in depth in the branch of mathematical known as analysis,
+the type of functions of primary interest in discrete math are those whose domain is either finite or a countable set.
 
 \subsubsection*{Definition}
 
-A function $ f $ with domain $ A $ and codomain $ B $ is a binary relation that satisfies two conditions; 
+A function $ f $ with domain $ A $ and codomain $ B $ is a binary relation that satisfies two conditions;
 
 \begin{packed_enum}
   \item \begin{em}Right-uniqueness:\end{em} $ \forall x \in A, y, z \in B : x f y \wedge x f z \implies y = z $
@@ -335,18 +335,18 @@ $$
 $$
 
 \noindent where $ \exists ! $ should be read as ``there exists a unique."
-In order for a relation to be a function, it must satisfy this condition. 
+In order for a relation to be a function, it must satisfy this condition.
 Of course, instead of writing $ x f E $, the familiar notation, $ f(x) = E $ explains that the value of $ f $ at a point $ x $ is given by some expression $ E $ (which may or may not involve $ x $).
 To define a function anonymously, it is possible to use the form $ x \mapsto E $.
 To express the fact that $ f $ is a function from domain $ A $ to codomain $ B $, we write $ f : A \to B $, or $ \mathrm{dom}(f) = A $ and $ \mathrm{cod}(f) = B $.
 
 \subsubsection*{Image and preimage}
 
-The \begin{em}image\end{em} of a function $ f : A \to B $ is the subset of $ B $ defined as $ \{ f(x) \mid x \in A \} $. 
+The \begin{em}image\end{em} of a function $ f : A \to B $ is the subset of $ B $ defined as $ \{ f(x) \mid x \in A \} $.
 The value of $ f $ when applied to $ x $ (i.e., $ f (x) $, or $ f x $) is the image of $ x $ under $ f $.
 The image of a subset of $ S \subseteq A $ is simarily defined as $ f[S] = \{ f(x) \mid x \in S \} $. \\
 
-\noindent Given the same function $ f $, the \begin{em}preimage\end{em} of a subset $ T \subseteq B $ is the set $ f^{-1}[T] = \{ x \in A \mid f(x) \in T \} $. 
+\noindent Given the same function $ f $, the \begin{em}preimage\end{em} of a subset $ T \subseteq B $ is the set $ f^{-1}[T] = \{ x \in A \mid f(x) \in T \} $.
 
 \begin{center}
   \def\svgwidth{0.85\columnwidth}
@@ -369,7 +369,7 @@ $$
 
 \noindent Function composition is not commutative---so $ f \circ g $ is not the same as $ g \circ f $, in general.
 It is, however, \begin{em}associative\end{em}, which is to say that given three functions \mbox{$ f : A \to B $}, \mbox{$ g : B \to C $}, and \mbox{$ h : C \to D $}; it is always the case that
-$$ 
+$$
   (h \circ g) \circ f = h \circ (g \circ f)
 $$
 
@@ -386,7 +386,7 @@ Three important properties that functions may possess are surjectivity, injectiv
 
 \subsubsection*{\ding{52} Surjectivity}
 
-A function $ f : A \to B $ is \begin{em}surjective\end{em} if there exists a value $ x \in A $ for every $ y \in B $, such that $ f(x) = y $. 
+A function $ f : A \to B $ is \begin{em}surjective\end{em} if there exists a value $ x \in A $ for every $ y \in B $, such that $ f(x) = y $.
 $$
   \forall y \in B, \exists x \in A : f(x) = y
 $$
