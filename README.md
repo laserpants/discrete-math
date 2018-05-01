@@ -8,7 +8,7 @@
 6. Proof Reasoning
 7. Recurrence Relations
 8. Combinatorics and Counting (Rule of Sum/Product, Pigeonhole principle, The Binomial Coefficient, Stirling numbers, etc.)
-9. Generating Functions
+9. [Generating Functions](https://github.com/laserpants/discrete-math/blob/master/generating_functions.pdf)
 10. Formal Languages and Automata
 11. Trees (and Data Structures?)
 12. Linear Algebra and Matrices
