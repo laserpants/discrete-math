@@ -56,7 +56,7 @@ if there exists some integer $c$, such that $ a = bc. $ Other ways to say this i
 
 %The divisibility relation satisfies the reflexive and transitive properites of binary relations, described in Chapter 4.
 
-Every number divides itself, since $a = a \cdot 1$ for all $a$. We just let $c = 1.$ This also means that $1$ divides every integer, in which case we set $c = a$. If $a$ divides $b,$ and $b$ divides $c,$ then there are integers $d$ and $e$, such that $b = ad$ and $c = be$. We then have $c = be = (ad)e = a(de),$ which means that $a$ divides $c.$ So if $a \mid b \text{ and } b \mid c,$ then $a \mid c.$ This property of a relation, known as \begin{em}transitivity\end{em}, is discussed more in Chapter 4. Every number is also a divisor of zero, since $0 = a \cdot 0$.
+Every number divides itself, since $a = a \cdot 1$ for all $a$. We just let $c = 1.$ This also means that $1$ divides every integer, in which case we set $c = a$. If $a$ divides $b,$ and $b$ divides $c,$ then there are integers $d$ and $e$, such that $b = ad$ and $c = be$. We then have $c = be = (ad)e = a(de),$ which means that $a$ divides $c.$ So if $a \mid b \text{ and } b \mid c,$ then $a \mid c.$ This property of a relation, known as \begin{em}transitivity\end{em}, is discussed more in depth in Chapter 4. Every number is also a divisor of zero, since $0 = a \cdot 0$.
 
 % If $a$ divides $b,$ meaning that $b = ac$ for some $c,$ and $b$ divides $a,$ so that $a = bd$, for some $d,$ then $a = acd,$ which means that $cd = 1$ and therefore $c = d = \pm1.$
 %
@@ -78,6 +78,8 @@ If a number $a$ divides both $b$ and $c$, then $a$ is a \begin{em}common divisor
 \end{packed_items}
 
 That is, the $\gcd$ is the unique common divisor of two numbers which is divisible by any common divisor of those two numbers. For example, the divisors of $42$ are $\{ 1,2,3,6,7,14,21,42 \}$ and the divisors of $24$ are $\{ 1,2,3,4,6,8,12,24 \}$. The common divisors of $42$ and $24$ are the elements in the intersection of these two sets, viz., $\{ 1,2,3,6 \}$. Every element of this set is a divisor of $6$. So the $\gcd$ of $42$ and $24$ is $6.$
+
+Proof that gcd exists and is unique?
 
 \subsubsection*{Prime numbers and coprimality}
 
