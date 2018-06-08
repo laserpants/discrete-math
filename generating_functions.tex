@@ -45,7 +45,23 @@
 \begin{document}
 
 \section*{9. Generating Functions}
+Generating functions are one of the most remarkable and useful tools in combinatorics, and perhaps all of mathematics. 
+The idea is to encode an infinite sequence $\langle c_0, c_1, \dots, c_n, \dots \rangle$ as coefficients of a formal power series:
+$$
+  G(x) = c_0 + c_1x + c_2x^2 + \cdots + c_nx^n + \cdots
+$$
+The word \begin{em}formal\end{em} here is to emphasize the fact that we don't think of this as an expression in which we substitute for $x$. 
+We are more interested in the sequence of coefficients. It doesn't matter, for example, whether the sum converges or not.
 
-Generating functions are one of the most remarkable and useful tools in combinatorics and mathematics more generally. A generating function is a formal power series.
+Let's see what this looks like for some sequences we can easily cook up.
+
+$$
+  \langle 1, 1, 1, 1, \dots \rangle \quad \rightarrow \quad A(x) = 1 + x + x^2 + x^3 + \cdots \quad = \quad \frac{1}{1-x}  
+$$
+$$
+  \langle 1, 2, 4, 8, \dots \rangle \quad \rightarrow \quad B(x) = 1 + 2x + 4x^2 + 8x^3 + \cdots \quad = \quad \frac{1}{1-2x}
+$$
+
+
 
 \end{document}
