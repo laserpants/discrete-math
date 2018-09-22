@@ -12,11 +12,6 @@
 <body>
   <h3>Basic definitions</h3>
   <p>
-    $$
-      A(n) = c_1 A(n - 1) + c_2 A(n - 2) + \cdots + c_k A(n - k)
-    $$
-  </p>
-  <p>
     A recurrence relation is an equation that defines the $n^{th}$ term of a
     number sequence as a function of some of its previous terms. It has the
     general form
@@ -26,11 +21,17 @@
     for some natural number $k$ and constant coefficients $c_1, c_2, \dots, c_k \in \mathbb{R}$,
     ($c_k \ne 0$), where $k$ is known as the <i>order</i> of the relation.
     A $k$-order recurrence relation depends on the $k$ previous terms.
-    <i>First order</i> recurrences have the form $x_k = c \cdot x_{k-1}$.
-    When $k > 1$, we say that the relation is a <i>higher order</i> recurrence
-    relation.
+    First order recurrences have the form $x_k = c \cdot x_{k-1}$, which
+    translates into a sequence
+    $$
+      \langle x_0 , c \cdot x_0 , c^2 \cdot x_0, \dots, c^k \cdot x_0, \dots \rangle.
+    $$
+    This is the same as a geometric progression with common ratio $c$ and and
+    initial value $x_0$.
   </p>
   <p>
+    When $k > 1$, we say that the relation is a <i>higher order</i> recurrence
+    relation.
     An infinite sequence $\langle x_0, x_1, x_2, \dots \rangle$ satisfying a
     $k$-order recurrence relation is then uniquely determined by its first $k$
     terms. For example; the Fibonnaci sequence
