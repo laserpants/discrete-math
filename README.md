@@ -6,7 +6,7 @@
 4. [Relations and Functions](https://github.com/laserpants/discrete-math/blob/master/relations.pdf)
 5. [Discrete Probability](https://github.com/laserpants/discrete-math/blob/master/probability.pdf) 
 6. Proof Reasoning
-7. Recurrence Relations
+7. [Recurrence Relations](https://laserpants.github.io/discrete-math/recurrence_relations/)
 8. Combinatorics and Counting (Rule of Sum/Product, Pigeonhole principle, The Binomial Coefficient, Stirling numbers, etc.)
 9. [Generating Functions](https://github.com/laserpants/discrete-math/blob/master/generating_functions.pdf)
 10. Formal Languages and Automata
